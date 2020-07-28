@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>london fashion week</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <style>
+        *
+        {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 610px;
+            background: #d7dbe4;
+        }
+        .list
+        {
+            position: absolute;
+            display: flex;
+            top:370px;
+            left: -150px;
+            transform: rotate(-90deg);
+        }
+
+
+        .list  li
+        {
+            padding:0 30px;
+            list-style: none;
+            font-size: 16px;
+
+            transition: all 0.5s ease-in-out;
+        }
+        .list  li:hover
+        {
+            background: #f2db6d;
+            text-decoration: underline solid black;
+            text-underline-offset: 10px;
+
+        }
+        .list li a
+        {
+            text-decoration: none;
+            color: #1D1E2C;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            letter-spacing: 2px;
+            transition: 0.5s all ease-in-out;
+        }
+        
+
+        .navigation_bar
+        {
+            position: absolute;
+            top:30px;
+            left: 47px;
+        }
+        .search
+        {
+            display: flex;
+            justify-content: end;
+            padding-top: 30px;
+            padding-right: 47px;
+        }
+        .heading1
+        {
+            position: absolute;
+            top:300px;
+            left: 50px;
+
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 5em;
+            letter-spacing: -5px;
+            transform: rotate(-90deg);
+
+            animation-name: animate1;
+            animation-iteration-count: 1;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes animate1 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left: 20px;
+            }
+            40%
+            {
+                opacity: 0.4;
+                visibility: visible;
+                left: 30px;
+            }
+            80%
+            {
+                opacity: 0.8;
+                visibility: visible;
+                left: 50px;
+            }
+        }
+        .heading2
+        {
+            position: absolute;
+            top:290px;
+            left: 70px;
+
+            text-transform: uppercase;
+            font-family: 'Poppins',sans-serif;
+            font-weight: 900;
+
+            transform: rotate(-90deg);
+            font-size: 6em;
+            color: #f2db6d;
+            z-index: -1;
+            letter-spacing: 5px;
+
+            animation-name: animate2;
+            animation-iteration-count: 1;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes animate2 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                top:220px;
+            }
+
+            40%
+            {
+                opacity: 0.4;
+                visibility: visible;
+                top:245px;
+            }
+            80%
+            {
+                opacity: 0.8;
+                visibility: hidden;
+                top:270px;
+            }
+            100%
+            {
+                top:290px;
+            }
+        }
+        .heading3
+        {
+            position: absolute;
+            top:355px;
+            left: 200px;
+
+            font-family: 'Poppins',sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 2em;
+            transform: rotate(-90deg);
+
+            animation-name: animate3;
+            animation-iteration-count: 1;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+        @keyframes animate3 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left:230px;
+            }
+
+            40%
+            {
+                opacity: 0.4;
+                visibility: visible;
+                left: 220px;
+            }
+            80%
+            {
+                opacity: 0.8;
+                visibility: hidden;
+                left:210px;
+            }
+            100%
+            {
+                opacity: 1;
+                visibility: visible;
+                left: 200px;
+            }
+        }
+
+        .content
+        {
+
+            position: absolute;
+            width: 250px;
+            font-size: 14px;
+            box-sizing: border-box;
+
+            font-family: 'Poppins', sans-serif;
+            word-spacing: 2px;
+            top:395px;
+            alignment: left;
+            left: 350px;
+            letter-spacing: 1px;
+            transform: rotate(-90deg);
+        }
+        .imgbox img
+        {
+            position: absolute;
+            width: 450px;
+            height: 550px;
+            left: 610px;
+            top:60px;
+
+
+            animation-name: animate4;
+            animation-iteration-count: 1;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+        @keyframes animate4 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                left: 550px;
+            }
+
+            40%
+            {
+                opacity: 0.4;
+                visibility: visible;
+                left: 570px;
+            }
+            80%
+            {
+                opacity: 0.8;
+                visibility: hidden;
+                left: 590px;
+            }
+            100%
+            {
+                opacity: 1;
+                visibility: visible;
+                left: 610px;
+            }
+        }
+        .imgbox2 img
+        {
+            position: absolute;
+            height: 120px;
+            width: 240px;
+
+            top:395px;
+            transform: rotate(-90deg);
+            left: 1000px;
+            opacity: 0.95;
+        }
+        .heading4
+        {
+            position: absolute;
+            font-family: 'Poppins',sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing:0;
+            top:550px;
+            left: 1055px;
+
+            animation-name: animate5;
+            animation-iteration-count: 1;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+        @keyframes animate5 {
+            0%
+            {
+                opacity: 0;
+                visibility: hidden;
+                top:580px;
+            }
+
+            40%
+            {
+                opacity: 0.4;
+                visibility: visible;
+                top:575px;
+            }
+            80%
+            {
+                opacity: 0.8;
+                visibility: hidden;
+                top:560px;
+            }
+            100%
+            {
+                opacity: 1;
+                visibility: visible;
+                top:550px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <ul class="list">
+        <li><a href="#">facebook</a> </li>
+        <li><a href="#">instagram</a> </li>
+        <li><a href="#">twitter</a> </li>
+    </ul>
+</div>
+<div class="navigation_bar">
+    <i class="fas fa-bars"></i>
+</div>
+
+<div class="search">
+    <i class="fas fa-search"></i>
+</div>
+
+
+<div class="heading1">
+    toni&guy
+</div>
+
+<div class="heading2">
+    duality
+</div>
+
+<div class="heading3">
+    collection 2017<br>duality
+</div>
+
+<div class="heading4">
+    official sponsor
+</div>
+
+<div class="content">
+    <p>The London Fashion Week presents collections from over 250 designers to an international audience,through hosting catwalk shows.</p>
+</div>
+
+<div class="imgbox">
+    <img src="model.png">
+</div>
+
+<div class="imgbox2">
+    <img src="london_fashion_week.png">
+</div>
+</body>
+</html>
